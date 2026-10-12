@@ -4,18 +4,39 @@ Publish images from Capture One straight to your WordPress website, and update t
 
 PhotoPress for Capture One is a Capture One publishing plugin. It works with the [PhotoPress](https://photopress.io) WordPress plugin.
 
-This repository is where you **download releases** and **report problems**. The plugin's source code is not published here.
+![The Publish tab of Capture One's Publish dialog](https://raw.githubusercontent.com/wiki/photopress-dev/photopress-capture-one-releases/images/publish-tab.png)
 
-## What it does
+This repository is where you **download releases**, **read the documentation** and **report problems**. The plugin's source code is not published here.
 
-- **Publishes** images from Capture One to your WordPress Media Library.
-- **Updates images in place.** Publish an image again and it replaces the one already on your site, keeping its URL, its page, and every post or gallery that shows it.
-- **Adds images to a page's gallery**, and can replace a gallery's images with a new set.
-- **Attaches new images to a page**, if you want.
-- **Keeps your site's limits.** It checks the size limit your site uses and tells you before uploading if an image is too large.
-- **Supports several websites.** You choose which one each time you publish.
+**[Download the latest release](https://github.com/photopress-dev/photopress-capture-one-releases/releases/latest)** · **[Documentation](https://github.com/photopress-dev/photopress-capture-one-releases/wiki)** · **[Report a problem](https://github.com/photopress-dev/photopress-capture-one-releases/issues/new/choose)**
 
-Title, caption, alt text and keywords come from your images' metadata, the same as uploading through WordPress.
+## Features
+
+### Publish from Capture One
+
+Select images, choose **PhotoPress** from the Publish menu, pick the website, and publish. Capture One exports the images with your processing settings, and the plugin uploads them to the WordPress Media Library. Title, caption, alt text and keywords come from your images' metadata. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Publishing)
+
+### Update images in place
+
+Re-edit an image and publish it again: the plugin finds it on your site by its file name and **replaces it in place**. Its URL, its attachment page, and every post and gallery that shows it stay as they are, and now show the new version. Optionally, its keywords, alt text and captions are updated wherever it's used. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Updating-images)
+
+### Add images to galleries
+
+Add the images you publish to the gallery on a page, or **replace a gallery's images** with a new set, in the order you publish them. Works with pages that have several galleries, and with galleries that show a page's attached images. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Galleries)
+
+![Adding images to a page's gallery](https://raw.githubusercontent.com/wiki/photopress-dev/photopress-capture-one-releases/images/publish-tab-gallery.png)
+
+### Attach new images to a page
+
+Attach newly uploaded images to a post or page, chosen from the site's recent posts and pages, drafts included. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Attaching-images-to-a-page)
+
+### Keep to your site's limits
+
+The plugin checks your site's image size limit before uploading, so WordPress never shows a scaled-down copy of what you exported. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Image-size-limit)
+
+### Several websites, one plugin
+
+Add every site you publish to, each with its own login, and choose one each time you publish. **Test Connection** checks the site, your login and PhotoPress, and says exactly what to fix. Passwords are kept in your Mac's Keychain. [More](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Setting-up-a-website)
 
 ## Requirements
 
@@ -25,27 +46,15 @@ Title, caption, alt text and keywords come from your images' metadata, the same 
 
 ## Install
 
-1. Download the latest `PhotoPress-x.y.z.zip` from [Releases](https://github.com/photopress-dev/photopress-capture-one-releases/releases).
+1. Download the latest `PhotoPress-x.y.z.zip` from [Releases](https://github.com/photopress-dev/photopress-capture-one-releases/releases/latest).
 2. Unzip it and double-click **PhotoPress.coplugin**, or install it under **Capture One › Settings › Plugins**.
 3. Restart Capture One if it asks you to.
 
-## Set up
-
-1. In WordPress, go to **Users › Profile › Application Passwords** and create one, for example named "Capture One". Your normal login password won't work here.
-2. In Capture One, open **Settings › Plugins › PhotoPress**, click **Add Website**, and enter the site address, your username and the application password.
-3. Click **Test Connection**. It checks your site, your login and PhotoPress, and tells you if anything needs fixing.
-
-## Publish
-
-Select images, then choose **PhotoPress** from Capture One's **Publish** menu.
-
-- **Publish** tab: the website, and optionally the page whose gallery the images go into, or that new images are attached to.
-- **Advanced** tab: whether to update an image's metadata and its alt text and captions where it's used, or to add images as new copies instead of replacing them.
-
-Images are matched to the ones already on your site by file name, so keep Capture One's output name the same as the image name.
+Then [set up your website](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Setting-up-a-website).
 
 ## Get help
 
-- **Found a problem?** [Open an issue](https://github.com/photopress-dev/photopress-capture-one-releases/issues/new/choose). The form asks for the details that help most: versions, what you did, and the plugin's log.
-- **Changes in each version:** see the [changelog](CHANGELOG.md) and [Releases](https://github.com/photopress-dev/photopress-capture-one-releases/releases).
+- **Documentation:** the [wiki](https://github.com/photopress-dev/photopress-capture-one-releases/wiki), including [Troubleshooting](https://github.com/photopress-dev/photopress-capture-one-releases/wiki/Troubleshooting).
+- **Found a problem?** [Open an issue](https://github.com/photopress-dev/photopress-capture-one-releases/issues/new/choose). The form asks for the details that help most.
+- **What's changed:** the [changelog](CHANGELOG.md) and [Releases](https://github.com/photopress-dev/photopress-capture-one-releases/releases).
 - **Security issues:** please don't post them publicly. See [SECURITY.md](SECURITY.md).
