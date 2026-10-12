@@ -1,0 +1,58 @@
+name: Bug report
+description: Something doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please don't include passwords or application passwords anywhere in the report.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Include any error message exactly as shown.
+      placeholder: |
+        1. Selected 3 images and chose Publish › PhotoPress
+        2. Ticked "Add images to a page's gallery" and chose the page "Spring Show"
+        3. Expected the images to be added to the gallery, but…
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: PhotoPress for Capture One version
+      description: Shown in Capture One › Settings › Plugins.
+      placeholder: "1.3.3"
+    validations:
+      required: true
+  - type: input
+    id: capture-one-version
+    attributes:
+      label: Capture One version
+      placeholder: "16.8"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: "15.7"
+  - type: input
+    id: wordpress-versions
+    attributes:
+      label: WordPress and PhotoPress versions
+      description: From the WordPress dashboard (Dashboard › Updates, and Plugins).
+      placeholder: "WordPress 7.1, PhotoPress 1.8"
+  - type: textarea
+    id: log
+    attributes:
+      label: Plugin log
+      description: |
+        The plugin's log is at `~/Library/Logs/com.captureone.PhotoPressPluginHost.log` (in Finder: Go › Go to Folder…, then paste `~/Library/Logs`). Please paste the lines from around the time of the problem.
+        The log can include your website's address and image file names. Remove anything you'd rather not share.
+      render: text
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else?
+      description: Screenshots, other plugins on your site (for example security or caching plugins), or anything else that might help.
