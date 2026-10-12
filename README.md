@@ -4,7 +4,7 @@ Publish images from Capture One straight to your WordPress website, and update t
 
 PhotoPress for Capture One is a Capture One publishing plugin. It works with the [PhotoPress](https://photopress.io) WordPress plugin.
 
-![The Publish tab of Capture One's Publish dialog](https://raw.githubusercontent.com/wiki/photopress-dev/photopress-capture-one-releases/images/publish-tab.png)
+![PhotoPress in Capture One's Publish menu](https://raw.githubusercontent.com/wiki/photopress-dev/photopress-capture-one-releases/images/hero.png)
 
 This repository is where you **download releases**, **read the documentation** and **report problems**. The plugin's source code is not published here.
 
